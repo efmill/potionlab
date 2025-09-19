@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('potions', function (Blueprint $table) {
             $table->id();
+
+            $table->string('title');
+            $table->string('author')->nullable();
+            $table->text('content');
+            
             $table->timestamps();
         });
     }

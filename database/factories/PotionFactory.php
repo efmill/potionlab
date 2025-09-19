@@ -17,7 +17,9 @@ class PotionFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'title' => fake()->sentence(),
+            'author' => fake()->name(),
+            'content' => fake()->text(500),
         ];
     }
 }
